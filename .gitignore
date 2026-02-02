@@ -1,0 +1,15 @@
+# DB設定（機密）
+db.properties
+
+# H2 Database
+*.mv.db
+*.trace.db
+/data/
+
+# Eclipse / Tomcat
+/.settings/
+/build/
+/bin/
+
+# OS
+.DS_Store

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* =========================
+   共通
+========================= */
+body {
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+.button-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* =========================
+   タイトル
+========================= */
+.page-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+
+    padding: 14px 0;
+    margin: 20px auto 30px;
+
+    color: #1e3a8a;
+    background: linear-gradient(to right, #e0ecff, #f0f6ff, #e0ecff);
+    border-radius: 8px;
+    max-width: 650px;
+}
+
+/* =========================
+   station.jsp（検索画面）
+========================= */
+.question-box {
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 20px auto;
+    background-color: #f0f6ff;
+
+    max-width: 600px;
+    width: 90%;
+}
+
+.label-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+    font-size: 14px;
+    color: #1e3a8a;
+
+    background-color: #ffffff;
+    border: 2px solid #3b82f6;
+    border-radius: 999px;
+}
+
+select {
+    font-size: 16px;
+    padding: 4px;
+    margin: 5px 0;
+}
+
+.search-btn {
+    font-size: 20px;
+    padding: 15px 40px;
+    background-color: #FFD966;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #FFCC33;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   result.jsp（結果画面）
+========================= */
+.result-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.route-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.distance {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+li {
+    margin: 20px;
+}
+
+.route-image {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.route-image img {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+}
+
+.return-btn {
+    font-size: 20px;
+    padding: 15px 40px;
+    background-color: #FFD966;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.return-btn:hover {
+    background-color: #FFCC33;
+    transform: translateY(-2px);
+}

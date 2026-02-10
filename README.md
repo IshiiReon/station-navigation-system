@@ -42,10 +42,8 @@
 - 利用者が迷わないよう、案内画像とルート表示を組み合わせたUIを設計
 
 ## 🖼 画面イメージ
-![駅構内ナビ タイトル]
-<img src="screen_images/title_sample.png" alt="駅構内ナビ タイトル" width="700">
 
-![駅構内ナビ 結果画面]
+<img src="screen_images/title_sample.png" alt="駅構内ナビ タイトル" width="700">
 <img src="screen_images/result_sample1.png" alt="駅構内ナビ 結果画面１" width="700">
 <img src="screen_images/result_sample2.png" alt="駅構内ナビ 結果画面１" width="700">
 <img src="screen_images/result_sample3.png" alt="駅構内ナビ 結果画面１" width="700">

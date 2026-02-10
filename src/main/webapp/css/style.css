@@ -11,23 +11,35 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+.flow-arrow {
+    text-align: center;
+    font-size: 22px;
+	font-size: 40px;      
+	font-weight: bold;
+    color: #3b82f6;
+    margin-top: 10px;
+}
 
 /* =========================
    タイトル
 ========================= */
 .page-title {
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 18px 0;
 
-    padding: 14px 0;
-    margin: 20px auto 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    background: linear-gradient(#e8f0ff, #dbeafe);
+    border-radius: 10px;
+    border: 2px solid #93c5fd;
 
     color: #1e3a8a;
-    background: linear-gradient(to right, #e0ecff, #f0f6ff, #e0ecff);
-    border-radius: 8px;
-    max-width: 650px;
 }
+
 
 /* =========================
    station.jsp（検索画面）
@@ -49,7 +61,7 @@ body {
     margin-bottom: 6px;
 
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     color: #1e3a8a;
 
     background-color: #ffffff;
@@ -58,13 +70,18 @@ body {
 }
 
 select {
-    font-size: 16px;
-    padding: 4px;
-    margin: 5px 0;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    border: 1px solid #93c5fd;
+    background-color: #ffffff;
+
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .search-btn {
-    font-size: 20px;
+    font-size: 30px;
     padding: 15px 40px;
     background-color: #FFD966;
     color: #333;
@@ -102,12 +119,54 @@ select {
     margin-bottom: 10px;
 }
 
+/* ===== 経路ヘッダー ===== */
+.route-header {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 14px 20px;
+
+    background-color: #ffffff;
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.route-point {
+    font-size: 20px;
+    margin: 6px 0;
+}
+
+.point-label {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 8px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e3a8a;
+
+    background-color: #e0ecff;
+    border-radius: 999px;
+}
+
+.point-name {
+    font-weight: bold;
+}
+
+
 ol {
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 li {
-    margin: 20px;
+    margin-bottom: 30px;
+    line-height: 1.9;
+}
+.route-box ol li {
+    font-size: 22px;      
+    line-height: 1.9;    
+    margin-bottom: 28px; 
 }
 
 .route-image {
@@ -117,12 +176,15 @@ li {
 
 .route-image img {
     width: 100%;
-    max-width: 400px;
-    border: 1px solid #ddd;
+    max-width: 420px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
+
 .return-btn {
-    font-size: 20px;
+    font-size: 30px;
     padding: 15px 40px;
     background-color: #FFD966;
     color: #333;

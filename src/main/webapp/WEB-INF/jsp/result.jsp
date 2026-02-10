@@ -25,16 +25,25 @@
 
 <div class="result-box">
 	<div class="route-header">
-	  <p>出発地点：<strong>${startName}</strong></p>
-	  <p>目的地：<strong>${goalName}</strong></p>
-	</div>
-    <div class="route-box">
+  		<div class="route-point start">
+    		<span class="point-label">出発</span>
+    		<span class="point-name">${startName}</span>
+  		</div>
+
+		<div class="flow-arrow">↓</div>
+
+		<div class="route-point goal">
+    		<span class="point-label">到着</span>
+    		<span class="point-name">${goalName}</span>
+  		</div>
+  	</div>
+
 
         <!-- ===== 距離表示 ===== -->
         <%-- <div class="distance">
             合計距離：<%= distance %> m
         </div>--%>
-
+	<div class="route-box">
         <!-- ===== 経路文章＋画像 ===== -->
         <ol>
         <%
@@ -63,7 +72,7 @@
 
     </div>
 </div>
-
+</div>
 <br>
 
 <!-- ===== 戻るボタン ===== -->

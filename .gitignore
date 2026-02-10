@@ -1,4 +1,4 @@
-# DB設定（機密）
+# DB設定
 db.properties
 
 # H2 Database
@@ -13,3 +13,11 @@ db.properties
 
 # OS
 .DS_Store
+
+# Logs
+*.log
+
+# IDE
+.classpath
+.project
+

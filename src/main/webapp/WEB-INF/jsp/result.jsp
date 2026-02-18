@@ -44,34 +44,43 @@
             合計距離：<%= distance %> m
         </div>--%>
 	<div class="route-box">
-        <!-- ===== 経路文章＋画像 ===== -->
-        <ol>
-        <%
-            for (int i = 0; i < routeTexts.size(); i++) {
-                String text = routeTexts.get(i);
-                StationEdge edge = routeEdges.get(i);
-        %>
-            <li>
-                <%= text %>
 
-                <%
-                    if (edge.getIMAGEPATH() != null) {
-                %>
-                    <div class="route-image">
-                        <img src="<%= request.getContextPath() + "/" + edge.getIMAGEPATH() %>"
-                             alt="進行方向の参考写真">
-                    </div>
-                <%
-                    }
-                %>
-            </li>
-        <%
-            }
-        %>
-        </ol>
+<%
+    for (int i = 0; i < routeTexts.size(); i++) {
+        String text = routeTexts.get(i);
+        StationEdge edge = routeEdges.get(i);
+%>
 
-    </div>
+	    <div class="route-card">
+			<div class="step-left">
+		        <div class="step-title">
+		            Step <%= i + 1 %>
+		        </div>
+		
+		        <div class="step-text">
+		            <%= text %>
+		        </div>
+	        </div>
+	
+	        <% if (edge.getIMAGEPATH() != null && !edge.getIMAGEPATH().isEmpty()) { %>
+	            <div class="route-image">
+	                <img src="<%= request.getContextPath() + "/" + edge.getIMAGEPATH() %>"
+	                     alt="進行方向の参考写真">
+	            </div>
+	        <% } %>
+	
+	    </div>
+
+    <% if (i < routeTexts.size() - 1) { %>
+        <div class="flow-arrow">↓</div>
+    <% } %>
+
+<%
+    }
+%>
+
 </div>
+
 </div>
 <br>
 

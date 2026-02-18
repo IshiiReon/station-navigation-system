@@ -3,6 +3,7 @@
    共通
 ========================= */
 body {
+	background: #f3f4f6;
     font-family: sans-serif;
     line-height: 1.8;
 }
@@ -108,10 +109,41 @@ select {
 }
 
 .route-box {
+	max-width: 900px;
     border: 1px solid #ccc;
     padding: 15px;
-    margin-top: 10px;
+    margin: 0 auto;
     background-color: #f9f9f9;
+}
+
+.route-card {
+	max-width: 800px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 25px auto;
+	display:flex;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.step-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: 50%;
+}
+
+.step-title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.step-text {
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 .distance {
@@ -155,7 +187,7 @@ select {
 }
 
 
-ol {
+/*ol {
     padding-left: 20px;
 }
 
@@ -168,7 +200,7 @@ li {
     line-height: 1.9;    
     margin-bottom: 28px; 
 }
-
+*/
 .route-image {
     margin-top: 10px;
     text-align: center;

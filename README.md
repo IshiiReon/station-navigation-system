@@ -79,8 +79,6 @@ STATION_EDGEテーブルに画像パスを持たせることで、
 
 <img src="screen_images/title_sample.png" alt="出発地と目的地の選択画面" width="700">
 <img src="screen_images/result_sample1.png" alt="最短経路と案内画像の表示画面1" width="700">
-<img src="screen_images/result_sample2.png" alt="最短経路と案内画像の表示画面2" width="700">
-<img src="screen_images/result_sample3.png" alt="最短経路と案内画像の表示画面3" width="700">
 <img src="screen_images/result_sample4.png" alt="最短経路と案内画像の表示画面4" width="700">
 
 ---
